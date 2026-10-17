@@ -14,12 +14,11 @@
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
       <nav>
-        <a class="active" href="#home"><span>01</span> Home</a>
-        <a href="#about"><span>02</span> About</a>
-        <a href="#experience"><span>03</span> Experience</a>
-        <a href="#skills"><span>04</span> Skills</a>
-        <a href="#projects"><span>05</span> Projects</a>
-        <a href="#contact"><span>06</span> Contact</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
       <div class="sidebar-bottom"><a href="mailto:ryanmiguelayag@gmail.com">Email me ↗</a><small>© 2026</small></div>
     </aside>
@@ -32,7 +31,12 @@
           <p class="kicker">HELLO, I'M</p>
           <h1>Ryan<br /><em>Ayag.</em></h1>
           <p class="intro">A Computer Science student who enjoys turning thoughtful ideas into reliable, human-centered digital experiences.</p>
-          <a class="button" href="#projects">Explore my work <b>↓</b></a>
+          <div class="hero-actions">
+            <a class="button" href="#projects">Explore my work <b>↓</b></a>
+            <a class="button button-secondary" href="https://github.com/ryanmgl" target="_blank" rel="noopener noreferrer">GitHub <b>↗</b></a>
+            <a class="button button-secondary" href="assets/Ryan_Ayag-Resume-Intern.pdf" target="_blank" rel="noopener noreferrer">View résumé <b>↗</b></a>
+            <a class="resume-download" href="assets/Ryan_Ayag-Resume-Intern.pdf" download="Ryan_Ayag_Resume.pdf">Download résumé ↓</a>
+          </div>
         </div>
         <div class="hero-accent" aria-hidden="true">
           <div class="photo-orbit"><img src="assets/AYAG_ID.png" alt="" /></div>
@@ -40,7 +44,7 @@
       </section>
 
       <section class="section about" id="about">
-        <p class="section-label">/ 01 — About me</p>
+        <p class="section-label">About me</p>
         <div class="split-heading"><h2>Curious by<br /><em>nature.</em></h2><p>I am a diligent third-year Computer Science student at FEU Institute of Technology, specializing in Software Engineering. I pair front-end and back-end foundations with a sharp eye for how people experience technology.</p></div>
         <div class="about-grid">
           <div class="education"><p class="card-label">Education</p><h3>BS Computer Science</h3><p>Far Eastern University Institute of Technology</p><p class="specialization">Specializing in Software Engineering</p><span>2023 — Present</span></div>
@@ -49,27 +53,50 @@
       </section>
 
       <section class="section experience" id="experience">
-        <p class="section-label">/ 02 — Experience &amp; highlights</p>
+        <p class="section-label">Experience &amp; highlights</p>
         <h2>Making ideas<br /><em>visible.</em></h2>
         <div class="timeline">
-          <article><div class="when">2026</div><div><p class="role">Database Management Intern</p><h3>StartupHub PH</h3><p>Cleaned and transformed a comprehensive climate-tech startup database in the Philippines. Developed a fully functional interactive map website with GIS layers and filter features.</p></div></article>
-          <article><div class="when">2025</div><div><p class="role">Social Media Designer</p><h3>Private</h3><p>Created visually engaging social-media content that strengthened brand presentation and audience engagement.</p></div></article>
-          <article><div class="when">2023 — 2024</div><div><p class="role">Caption Writer</p><h3>Association for Computing Machinery<br />Student Chapter</h3><p>Wrote clear, engaging captions for social posts that helped boost organizational visibility and engagement.</p></div></article>
-          <article class="award"><div class="when">Highlight</div><div><p class="role">Best Project 2nd Runner Up</p><h3>Petcetera</h3><p>Everything pets, all in one place — a project recognized for its concept and execution.</p></div></article>
+          <article class="timeline-card" tabindex="0"><img src="assets/startuphub_logo.png" alt="" loading="lazy" decoding="async" /><div class="when">2026</div><div><p class="role">Database Management Intern</p><h3>StartupHub PH</h3><p>Cleaned and transformed a comprehensive climate-tech startup database in the Philippines. Developed a fully functional interactive map website with GIS layers and filter features.</p></div></article>
+          <article class="timeline-card" tabindex="0"><img src="assets/instagram_logo.jpg" alt="" loading="lazy" decoding="async" /><div class="when">2025</div><div><p class="role">Social Media Designer</p><h3>Private</h3><p>Created visually engaging social-media content that strengthened brand presentation and audience engagement.</p></div></article>
+          <article class="timeline-card" tabindex="0"><img src="assets/acm_logo.png" alt="" loading="lazy" decoding="async" /><div class="when">2023 — 2024</div><div><p class="role">Caption Writer</p><h3>Association for Computing Machinery<br />Student Chapter</h3><p>Wrote clear, engaging captions for social posts that helped boost organizational visibility and engagement.</p></div></article>
+          <article class="timeline-card award" tabindex="0"><div class="when">Highlight</div><div><p class="role">Best Project 2nd Runner Up</p><h3>Petcetera</h3><p>Everything pets, all in one place — a project recognized for its concept and execution.</p></div></article>
         </div>
       </section>
 
       <section class="section skills" id="skills">
-        <p class="section-label">/ 03 — Toolkit</p>
+        <p class="section-label">Toolkit</p>
         <div class="skills-title"><h2>Built with<br /><em>intention.</em></h2><p>Tools I use to prototype, build, organize, and improve digital products.</p></div>
-        <div class="skill-list">
-          <div><span>01</span><h3>Python</h3><p>Development &amp; automation</p></div><div><span>02</span><h3>JavaScript</h3><p>Interactive web experiences</p></div><div><span>03</span><h3>HTML / CSS</h3><p>Responsive interfaces</p></div><div><span>04</span><h3>SQL</h3><p>Structured data</p></div><div><span>05</span><h3>PHP &amp; C++</h3><p>Application foundations</p></div><div><span>06</span><h3>Jira</h3><p>Planning &amp; workflow</p></div>
+        <div class="skill-groups">
+          <div class="skill-group">
+            <p class="skill-category">Languages</p>
+            <div class="skill-list">
+              <div class="skill-card"><img src="assets/python_logo.jpg" alt="" loading="lazy" decoding="async" /><h3>Python</h3><p>Development &amp; automation</p></div>
+              <div class="skill-card"><img src="assets/js_logo.png" alt="" loading="lazy" decoding="async" /><h3>JavaScript</h3><p>Interactive web applications</p></div>
+              <div class="skill-card"><img src="assets/php_logo.jpg" alt="" loading="lazy" decoding="async" /><h3>PHP</h3><p>Server-side web development</p></div>
+              <div class="skill-card"><img src="assets/cpp_logo.jpg" alt="" loading="lazy" decoding="async" /><h3>C++</h3><p>Systems &amp; application foundations</p></div>
+            </div>
+          </div>
+          <div class="skill-group">
+            <p class="skill-category">Databases</p>
+            <div class="skill-list">
+              <div class="skill-card"><img src="assets/sql_logo.png" alt="" loading="lazy" decoding="async" /><h3>SQL</h3><p>Relational querying</p></div>
+              <div class="skill-card"><img src="assets/postgresql_logo.png" alt="" loading="lazy" decoding="async" /><h3>PostgreSQL</h3><p>Relational database management</p></div>
+            </div>
+          </div>
+          <div class="skill-group">
+            <p class="skill-category">Tools</p>
+            <div class="skill-list">
+              <div class="skill-card"><img src="assets/jira_logo.png" alt="" loading="lazy" decoding="async" /><h3>Jira</h3><p>Planning &amp; workflow</p></div>
+              <div class="skill-card"><img src="assets/figma_logo.png" alt="" loading="lazy" decoding="async" /><h3>Figma</h3><p>Interface design &amp; prototyping</p></div>
+              <div class="skill-card"><img src="assets/google_logo.png" alt="" loading="lazy" decoding="async" /><h3>Google Workspace</h3><p>Collaboration &amp; productivity</p></div>
+            </div>
+          </div>
         </div>
         <div class="certs"><p class="card-label">Certifications</p><a href="https://www.credly.com/badges/8e65ce1c-381e-4623-acdf-887df4bece13" target="_blank" rel="noreferrer">PMI Project Management Ready™ ↗</a><a href="https://www.credly.com/badges/4ea25d7c-dcce-4a56-a2c9-3614650e4cd5" target="_blank" rel="noreferrer">IT Specialist — Python (2025) ↗</a><a href="https://www.credly.com/badges/7212b917-9c74-4480-bc0d-c01d6acdec87" target="_blank" rel="noreferrer">CCNA: Introduction to Networks (2025) ↗</a><span>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</span></div>
       </section>
 
       <section class="section projects" id="projects">
-        <p class="section-label">/ 04 — Selected projects</p>
+        <p class="section-label">Selected projects</p>
         <div class="projects-heading"><h2>Ideas in<br /><em>motion.</em></h2><p>From exploring routes through space to mapping climate innovation closer to home.</p></div>
         <div class="project-grid">
           <article class="project-card">
@@ -84,11 +111,11 @@
       </section>
 
       <section class="section contact" id="contact">
-        <p class="section-label">/ 05 — Contact</p>
+        <p class="section-label">Contact</p>
         <p class="availability">Open to internship opportunities</p>
         <h2>Let's make<br />something <em>matter.</em></h2>
         <a class="email" href="mailto:ryanmiguelayag@gmail.com">ryanmiguelayag@gmail.com <span>↗</span></a>
-        <div class="contact-footer"><a href="https://www.linkedin.com/in/ryan-ayag/" target="_blank" rel="noreferrer">LinkedIn ↗</a><span>© Ryan Ayag 2026</span></div>
+        <div class="contact-footer"><div class="contact-links"><a href="https://www.linkedin.com/in/ryan-ayag/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/ryanmgl" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="assets/Ryan_Ayag-Resume-Intern.pdf" target="_blank" rel="noopener noreferrer">Résumé ↗</a></div><span>© Ryan Ayag 2026</span></div>
       </section>
     </main>
     <div class="fluid-trail" aria-hidden="true"></div>
