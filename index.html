@@ -31,12 +31,7 @@
           <p class="kicker">HELLO, I'M</p>
           <h1>Ryan<br /><em>Ayag.</em></h1>
           <p class="intro">A Computer Science student who enjoys turning thoughtful ideas into reliable, human-centered digital experiences.</p>
-          <div class="hero-actions">
-            <a class="button" href="#projects">Explore my work <b>↓</b></a>
-            <a class="button button-secondary" href="https://github.com/ryanmgl" target="_blank" rel="noopener noreferrer">GitHub <b>↗</b></a>
-            <a class="button button-secondary" href="assets/Ryan_Ayag-Resume-Intern.pdf" target="_blank" rel="noopener noreferrer">View résumé <b>↗</b></a>
-            <a class="resume-download" href="assets/Ryan_Ayag-Resume-Intern.pdf" download="Ryan_Ayag_Resume.pdf">Download résumé ↓</a>
-          </div>
+          <a class="button" href="#projects">Explore my work <b>↓</b></a>
         </div>
         <div class="hero-accent" aria-hidden="true">
           <div class="photo-orbit"><img src="assets/AYAG_ID.png" alt="" /></div>
@@ -46,6 +41,11 @@
       <section class="section about" id="about">
         <p class="section-label">About me</p>
         <div class="split-heading"><h2>Curious by<br /><em>nature.</em></h2><p>I am a diligent third-year Computer Science student at FEU Institute of Technology, specializing in Software Engineering. I pair front-end and back-end foundations with a sharp eye for how people experience technology.</p></div>
+        <div class="about-actions" aria-label="Profile links">
+          <a class="button about-button" href="https://github.com/ryanmgl" target="_blank" rel="noopener noreferrer">GitHub <b>↗</b></a>
+          <button class="button about-button" id="resume-open" type="button">View résumé <b>↗</b></button>
+          <a class="resume-download" href="assets/Ryan_Ayag-Resume-Intern.pdf" download="Ryan_Ayag_Resume.pdf">Download résumé ↓</a>
+        </div>
         <div class="about-grid">
           <div class="education"><p class="card-label">Education</p><h3>BS Computer Science</h3><p>Far Eastern University Institute of Technology</p><p class="specialization">Specializing in Software Engineering</p><span>2023 — Present</span></div>
           <div class="education secondary"><h3>Senior High School</h3><p>Mater Carmeli School of Novaliches</p><p class="specialization">Graduated with High Honors · Rank 6 of the batch</p><span>2021 — 2023</span></div>
@@ -118,8 +118,17 @@
         <div class="contact-footer"><div class="contact-links"><a href="https://www.linkedin.com/in/ryan-ayag/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/ryanmgl" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="assets/Ryan_Ayag-Resume-Intern.pdf" target="_blank" rel="noopener noreferrer">Résumé ↗</a></div><span>© Ryan Ayag 2026</span></div>
       </section>
     </main>
+    <div class="resume-modal" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="resume-title" aria-hidden="true">
+      <div class="resume-modal-panel">
+        <div class="resume-modal-header">
+          <h2 id="resume-title">Ryan Ayag — Résumé</h2>
+          <button class="resume-close" type="button" aria-label="Close résumé">×</button>
+        </div>
+        <iframe src="assets/Ryan_Ayag-Resume-Intern.pdf" title="Ryan Ayag résumé"></iframe>
+      </div>
+    </div>
     <div class="fluid-trail" aria-hidden="true"></div>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-    <script src="script.js"></script>
+    <script src="script.js?v=20261018"></script>
   </body>
 </html>
