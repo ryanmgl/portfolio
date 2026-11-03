@@ -80,7 +80,9 @@ body{background:var(--dark);color:var(--ink)}
 .project-content>p:not(.project-type){color:#596378;font-size:14px;line-height:1.75;margin:0 0 32px}
 .project-content a{margin-top:auto;display:inline-flex;align-items:center;gap:18px;color:#485b89;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:8px;transition:gap .2s ease,color .2s ease}
 .project-content a:hover,.project-content a:focus-visible{gap:25px;color:#a16d38}
-@media(max-width:900px){.projects-heading{grid-template-columns:1fr;gap:28px}.project-grid{grid-template-columns:1fr}}
+.project-card:last-child:nth-child(odd){grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr)}
+.project-card:last-child:nth-child(odd) .project-visual{aspect-ratio:auto;min-height:360px}
+@media(max-width:900px){.projects-heading{grid-template-columns:1fr;gap:28px}.project-grid{grid-template-columns:1fr}.project-card:last-child:nth-child(odd){grid-column:auto;display:flex}.project-card:last-child:nth-child(odd) .project-visual{aspect-ratio:21/10;min-height:0}}
 @media(max-width:440px){.projects-heading{margin-bottom:42px}.project-content{padding:26px}}
 @media(prefers-reduced-motion:reduce){.skill-list .skill-card,.skill-card img,.timeline .timeline-card,.timeline-card>img{transition:none}.skill-card:is(:hover,:focus-visible),.timeline-card:is(:hover,:focus-visible){transform:none}}
 
